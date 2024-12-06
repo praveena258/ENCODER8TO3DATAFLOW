@@ -35,22 +35,37 @@ Logical circuit of the above expressions is given below:
 Figure 02  Encoder 8 * 3
 
 **Procedure**
+compile and run the program
+Genrate the RtL schematic and save the logic diagram
+create nodes foe inputs for outputs to generate the timing diagram
 
 /* write all the steps invloved */
 
 **PROGRAM**
 
+module exe5(d1,d2,d3,d4,d5,d6,d7,a,b,c);
+input d1,d2,d3,d4,d5,d6,d7;
+output a,b,c;
+assign a=(d4|d5|d6|d7);
+assign b=(d2|d3|d6|d7);
+assign c=(d1|d3|d5|d7);
+endmodule
+
+
+
 /* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:
+Developed by:praveena d RegisterNumber: 24003392
 */
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
+![Screenshot 2024-12-06 221247](https://github.com/user-attachments/assets/1786faa8-69cd-4c1e-8cdf-0e0c661a73b2)
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
+![Screenshot 2024-12-06 221224](https://github.com/user-attachments/assets/cb20bc96-2a91-41ac-8ed8-586e8f4b14e7)
+
 
 **RESULTS**
-
-
+therefore encoder 8 to 3 in dataflowing modeling using verilog and validating their functionally using their functional tables is verify
 
 
